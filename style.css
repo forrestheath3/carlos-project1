@@ -1,0 +1,186 @@
+body {
+    margin: 0px;
+    background-color: #EA7B12;
+    font-family: 'Muli' sans-serif;
+    /* adding in some padding */
+}
+.header {
+    align-items: center;
+    background-color: #EA7B12;
+    color: black;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+}
+
+
+.header__img {
+    margin-left: 30px;
+    width: 200px;
+}
+.login {
+    background: linear-gradient(#EA7B12, #CE170A);
+}
+
+.header__img {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.header__menu {
+    margin-right: 30px;
+}
+.header__menu ul {
+   display: none;
+   list-style: none;
+   padding: 0px;
+   position: absolute;
+   width: 100px;
+   text-align: right;
+   margin: 0px 0px 0px -25px;
+   margin-right: 30px;
+}
+.header__menu:hover ul, ul:hover {
+    display: block;
+}
+.header__menu li {
+    margin: 10px 0px;
+}
+.header__menu li a {
+    color: black;
+    text-decoration: none;
+}
+.header__menu li a:hover {
+    text-decoration: underline;
+
+}
+.header__menu--profile {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.header__menu--profile img {
+    margin-right: 8px;
+    width: 26px;
+}
+.header__menu--profile p {
+    margin: 0px;
+    color: black;
+}
+.main {
+    height: 300px;
+}
+.main__tittle {
+    color: black;
+    font-size: 25px;
+}
+.input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid black;
+    border-radius: 60px;
+    color: black;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    height: 38px;
+    padding: 0px 20px;
+    width: 70%;
+    outline: none;
+
+}
+::placeholder {
+    color: black;
+}
+
+/* CSS for the Carrusel page */
+
+
+.carousel {
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+}
+.carousel__container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+.carousel-item {
+    background-color: brown;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+}
+.carousel-item:hover ~ .carousel-item {
+    transform: translate3d(100px, 0, 0);
+}
+.carousel__container:hover .carousel-item {
+    opacity: 0.3;
+}
+.carousel__container:hover .carousel-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+.carousel-item__img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+.carousel-item__details {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0,) 100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.carousel-item__details img {
+    width: 25px;
+    height: 25px;
+}
+.carousel-item__details p {
+    color: white;
+}
+.carousel-item:hover .carousel-item__details {
+    opacity: 1;
+}
+
+
+
+
+
+
+/*
+body {
+    margin: 0px;
+    font-family: 'Muli' sans-serif;
+}
+.header {
+    align-items: center;
+    background-color: #EA7B12;
+    color: black;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+}
+.header__img {
+    margin-left: 30px;
+    width: 200px;
+}
+*/
